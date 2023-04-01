@@ -14,8 +14,8 @@ def island_perimeter(grid):
         """ deep first search """
         if (i, j) in visited:
             return 0
-        if i >= len(grid) or j >= len(grid[0]) or\
-         i < 0 or j < 0 or grid[i][j] == 0:
+        if i >= len(grid) or j >= len(grid[0]) or
+        i < 0 or j < 0 or grid[i][j] == 0:
             return 1
         visited.add((i, j))
         result = dfs(i, j + 1)

@@ -5,7 +5,7 @@
 def rotate_2d_matrix(matrix):
     """ rotate n X n matrix 90 degrees clockwise """
     n = len(matrix)
-    for layer in range(l // 2):
+    for layer in range(n // 2):
         first, last, offset = layer, n - 1 - layer, 0
         for i in range(first, last):
             top = matrix[first][i]
